@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 1 HTML Desarrollo de Software - 2024</title>
+</head>
+<body style="margin: 0px; padding: 0px;">
+    <header style="position: fixed; background-color: aliceblue; width: 100vw;">
+        <nav>
+            <h1>Encabezado principal</h1>
+            <ul>
+                <li>
+                    <a href="#estructura">Ir a estructura</a>
+                </li>
+                <li>
+                    <a href="#multimedia">Ir a Multimedia</a>
+                </li>
+                <li>
+                    <a href="#formularios">Ir a Formulario</a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+    <main>
+        <section style="padding-top: 150px;" id="estructura">
+            <h1>1. Estructura básica del Documento HTML</h1>
+            <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título</p>
+        </section>
+        <section>
+            <h1>2. Encabezados y propiedades del texto</h1>
+            <h2><b>Este es un texto en negrita</b></h2>
+            <h3><i>Este es un texto en cursiva</i></h3>
+            <h4><u>Este es un texto subrayado</u></h4>
+            <h5><u><i>Este es un texto subrayado y en cursiva</i></u></h5>
+            <h6><mark>Este es un texto resaltado</mark></h6>
+       </section>  
+        <section>
+            <h1>3. Divisiones y Agrupación de Contenido</h1>
+                <h2>Seccion 1</h2>
+                <p>
+                    Contenido de la primera seccion agrupada en un <span style="font-family: Arial, Helvetica, sans-serif;">div</span>.
+                </p>
+                <h2>Seccion 2</h2>
+                <p>
+                Contenido de la segunda seccion agrupada en un <span style="font-family: Arial, Helvetica, sans-serif;">div</span>.
+                </p>
+        <section>
+            <h1>4. Enlaces y Listas</h1>
+            <p>Visita mi <a href="https://es.wikipedia.org/wiki/Martín_Palermo" target="_blank">biografía</a>
+            </p>
+            <section>
+                <p>Enlaces internos</p>
+                <ul>
+                    <li>
+                        <a href="#estructura">Ir a Estructura</a>
+                    </li>
+                    <li>
+                        <a href="#multimedia">Ir a Multimedia</a>
+                    </li>
+                    <li>
+                        <a href="#formularios">Ir a Formulario</a>
+                    </li>
+                </ul>
+            </section>
+                <p>Lista desordenada:</p>
+                <ul>
+                    <li>
+                        Primer item de una lista desordenada
+                    </li>
+                    <li>
+                        Segundo item de una lista desordenada
+                    </li>
+                </ul>
+            <section>
+                <p>Lista ordenada:</p>
+                <ol>
+                    <li>
+                        Primer item de una lista ordenada
+                    </li>
+                    <li>
+                        Seguno item de una lista ordenada
+                    </li>
+                </ol>
+            </section>
+        </section>
+        <section id="multimedia">
+            <h1>5. Elementos Multimedia</h1>
+            <img 
+                src="https://lumiere-a.akamaihd.net/v1/images/ghost_rider_2007_01_b61b4ba5.jpeg?region=274,0,1424,801" width="400px"  
+                alt="Imagen de Ghost Rider"
+            />
+            <video src="./multimedia/videoplayback.mp4" controls muted width="400px" ></video>
+            <audio src="./multimedia/bad-to-the-bone.mp3" controls></audio>
+                
+        </section>
+       <section>
+        <h1>6. Tablas</h1>
+        <table style="border: 1px solid black;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;">Columna 1</th>
+                    <th style="border: 1px solid black;">Columna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid black;">Dato 1</td>
+                    <td style="border: 1px solid black;">Dato 2</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Dato 3</td>
+                    <td style="border: 1px solid black;">Dato 4</td>
+                </tr>
+            </tbody>
+        </table>
+       </section>
+       <section id="formularios">
+        <h1>7. Formularios</h1>
+        <form action="">
+            <label for="Nombre">Nombre</label>
+        <input type="text" placeholder="Alejo Carobolante" name="Nombre">
+    
+        <label for="Email">E-Mail</label>
+        <input type="email" placeholder="alejo.carobolante@alumnos.frm.utn.edu.ar" name="Email" style="width: 255px;">
+    
+        <label for="Mensaje">Mensaje</label>
+        <textarea name="Mensaje" placeholder="Ingrese su Mensaje"></textarea>
+    
+        <button type="submit" style="cursor: pointer;">Enviar</button>
+        </form>
+         </section>
+    </main>
+   <footer style="display: flex; justify-content: center;"><p>2024 trabajo práctico HTML ALEJO CAROBOLANTE</p></footer>
+</body>
+</html>
